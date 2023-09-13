@@ -13,13 +13,13 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <div className="bg-[#09123D] h-screen relative">
-      <div className="w-[70vh] h-[40vh] bg-pink-300 absolute left-0 top-0 rounded-full blur-[300px]" />
-      <div className="w-[70vh] h-[20vh] bg-pink-300 absolute right-0 bottom-[30vh] rounded-full blur-[300px]" />
+      <div className="w-screen h-[40vh] sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 rounded-full blur-[300px]" />
+      <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-[30vh] rounded-full blur-[300px]" />
       <Image
       src="/photos/topRight.png"
       width={700}
       height={700}
-      className="absolute top-[-20vh] right-[-20vh] md:top-0 md:right-0 z-0 blur-[3px]"
+      className=" absolute top-[0vh] -[10vh] md:top-0 md:right-0 z-0 blur-[3px]"
       alt="Picture of the topmesh"
     />
       <Image
@@ -31,25 +31,25 @@ const Landing = () => {
     />
       <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10">
         {/* left part */}
-        <div className="relative w-screen xl:w-[100vh]">
-          <div className=" flex flex-wrap text-white text-5xl mb-5 xl:text-7xl fontGamja mt-4">
+        <div className="relative md:w-screen xl:w-[100vh]">
+          <div className="w-full flex  text-white text-5xl mb-5 xl:text-7xl fontGamja mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
          
-          <div className=" flex flex-wrap text-sm xl:text-3xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
+          <div className="w-full flex flex-wrap text-sm xl:text-3xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
-          <div className="w-full/2 my-4 mr-0 md:mr-10 xl:my-6 h-12 xl:h-16 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
+          <div className="w-full md:w-full/2 my-4 mr-0 md:mr-10 xl:my-6 h-12 xl:h-16 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
             {" "}
             Contact me
           </div>
-          <div className="flex text-md sm:text-xl xl:text-3xl ">
+          <div className="flex  text-md sm:text-xl xl:text-3xl ">
             <span className="flex flex-wrap  my-1 xl:my-5 bg-gradient-to-r from-[#ECFDFE] to-[#a8b9f2] bg-clip-text text-transparent" >
               Reach out to me via:
               </span>
             {/* E-mail */}
-            <div className="h-10 w-10 xl:w-20 xl:h-20 flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-5 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
+            <div className="flex flex-wrap h-10 w-10 xl:w-20 xl:h-20 rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 sm:ml-5 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
               <svg
                 className="h-full w-full px-2 py-2 xl:px-5 xl:py-5 justify-center items-center"
                 viewBox="0 0 52 40"
@@ -63,7 +63,7 @@ const Landing = () => {
               </svg>
             </div>
             {/* Instagram */}
-            <div className="h-10 w-10 xl:w-20 xl:h-20 flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
+            <div className="h-10 w-10 xl:w-20 xl:h-20 flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 xs:ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
               <svg
                 className="h-full w-full px-2 py-2 xl:px-5 xl:py-5 justify-center items-center"
                 viewBox="0 0 52 45"
@@ -77,7 +77,7 @@ const Landing = () => {
               </svg>
             </div>
             {/* linkedin */}
-            <div className="h-10 w-10 xl:w-20 xl:h-20 flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
+            <div className="h-10 w-10 xl:w-20 xl:h-20 flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 xs:ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
               <svg
                 className="h-full w-full px-2 py-2 xl:px-5 xl:py-5 justify-center items-center"
                 viewBox="0 0 46 35"
@@ -93,7 +93,7 @@ const Landing = () => {
           </div>
         </div>
         {/* right part */}
-        <div className="relative  hidden md:flex h-screen/2 ml-10 xl:ml-0 ">
+        <div className="relative hidden md:flex h-screen/2 ml-10 xl:ml-0 ">
         <Image
       src="/photos/monster.png"
       width={700}
