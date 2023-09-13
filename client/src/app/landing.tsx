@@ -32,11 +32,11 @@ const Landing = () => {
       <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10">
         {/* left part */}
         <div className="relative md:w-screen xl:w-[100vh]">
-          <div className="w-full flex  text-white text-5xl mb-5 xl:text-7xl fontGamja mt-4">
+          <div className="w-full flex  text-white text-5xl mb-5 xl:text-6xl fontGamja mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
          
-          <div className="w-full flex flex-wrap text-sm xl:text-5xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
+          <div className="w-full flex flex-wrap text-sm xl:text-2xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
