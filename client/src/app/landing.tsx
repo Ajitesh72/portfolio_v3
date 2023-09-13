@@ -32,15 +32,15 @@ const Landing = () => {
       <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10">
         {/* left part */}
         <div className="relative md:w-screen xl:w-[100vh]">
-          <div className="w-full flex  text-white text-5xl mb-5 xl:text-5xl fontGamja mt-4">
+          <div className="w-full flex  text-white text-5xl mb-5 xl:text-7xl fontGamja mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
          
-          <div className="w-full flex flex-wrap text-sm xl:text-xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
+          <div className="w-full flex flex-wrap text-sm xl:text-5xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
-          <div className="w-full md:w-full/2 my-4 mr-0 md:mr-10 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
+          <div className="w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
             {" "}
             Contact me
           </div>
