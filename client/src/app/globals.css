@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
 .fontGamja{
   font-family: 'Gamja Flower', ;
