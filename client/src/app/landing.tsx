@@ -32,7 +32,7 @@ const Landing = () => {
       <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10">
         {/* left part */}
         <div className="relative md:w-screen xl:w-[100vh]">
-          <div className="w-full flex font-bold text-white text-5xl mb-5 xl:text-6xl fontGamja mt-4">
+          <div className="w-full flex font-bold text-white text-5xl mb-5 xl:text-6xl md:fontGamja mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
          
