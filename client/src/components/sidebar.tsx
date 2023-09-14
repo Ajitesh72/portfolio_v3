@@ -49,19 +49,19 @@ function Sidebar() {
                   <Link href="/"><i className="fas fa-home mr-5 w-10"></i>Home</Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about">  <i class="fas fa-user mr-5 w-7"></i> ABOUT ME</Link>
+                  <Link href="/about">  <i className="fas fa-user mr-5 w-7"></i> ABOUT ME</Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i class="fas fa-code mr-5"></i>DEVELOPMENT</Link>
+                  <Link href="/about"><i className="fas fa-code mr-5"></i>DEVELOPMENT</Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i class="fas fa-briefcase mr-5 w-10 "></i>EXPERIENCE</Link>
+                  <Link href="/about"><i className="fas fa-briefcase mr-5 w-10 "></i>EXPERIENCE</Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i class="fas fa-envelope mr-5 w-10"></i>CONTACT</Link>
+                  <Link href="/about"><i className="fas fa-envelope mr-5 w-10"></i>CONTACT</Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i class="fas fa-file-alt mr-5 w-10"></i>RESUME</Link>
+                  <Link href="/about"><i className="fas fa-file-alt mr-5 w-10"></i>RESUME</Link>
                 </li>
                 {/* Add more sidebar links as needed */}
               </ul>
