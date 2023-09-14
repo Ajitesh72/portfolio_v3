@@ -40,12 +40,12 @@ const Landing = () => {
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
-          <div className="w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
+                   <div className="w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
             {" "}
             Contact me
           </div>
           <div className="flex  text-md sm:text-xl  ">
-            <span className="flex flex-wrap  my-1  bg-gradient-to-r from-[#ECFDFE] to-[#a8b9f2] bg-clip-text text-transparent" >
+            <span className="flex flex-wrap  my-2 sm:my-1  bg-gradient-to-r from-[#ECFDFE] to-[#a8b9f2] bg-clip-text text-transparent" >
               Reach out to me via:
               </span>
             {/* E-mail */}
@@ -91,6 +91,12 @@ const Landing = () => {
               </svg>
             </div>
           </div>
+          <div className="w-full  cursor-pointer mt-10 justify-center flex md:hidden ml-5  animate-custom-bounce">
+        <svg width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.6694 34.0078C22.4696 34.9111 20.5212 34.9111 19.3214 34.0078L3.96429 22.4453C2.76451 21.5419 2.76451 20.075 3.96429 19.1716C5.16406 18.2683 7.1125 18.2683 8.31228 19.1716L21.5002 29.1009L34.6882 19.1789C35.8879 18.2755 37.8364 18.2755 39.0362 19.1789C40.2359 20.0822 40.2359 21.5492 39.0362 22.4525L23.679 34.015L23.6694 34.0078ZM39.0266 8.57026L23.6694 20.1328C22.4696 21.0361 20.5212 21.0361 19.3214 20.1328L3.96429 8.57026C2.76451 7.66694 2.76451 6.19995 3.96429 5.29663C5.16406 4.39331 7.1125 4.39331 8.31228 5.29663L21.5002 15.2259L34.6882 5.30386C35.8879 4.40054 37.8364 4.40054 39.0362 5.30386C40.2359 6.20718 40.2359 7.67417 39.0362 8.57749L39.0266 8.57026Z" fill="white"/>
+</svg>
+
+        </div>
         </div>
         {/* right part */}
         <div className="relative hidden md:flex h-screen/2 ml-10 xl:ml-20 ">
@@ -101,6 +107,12 @@ const Landing = () => {
       className="z-0 h-screen py-20 xl:px-20 hidden md:flex"
       alt="Picture of the Monster"
     />
+        </div>
+        <div className="h-full mb-24 cursor-pointer hidden ml-5 md:flex justify-center items-end animate-custom-bounce">
+        <svg width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.6694 34.0078C22.4696 34.9111 20.5212 34.9111 19.3214 34.0078L3.96429 22.4453C2.76451 21.5419 2.76451 20.075 3.96429 19.1716C5.16406 18.2683 7.1125 18.2683 8.31228 19.1716L21.5002 29.1009L34.6882 19.1789C35.8879 18.2755 37.8364 18.2755 39.0362 19.1789C40.2359 20.0822 40.2359 21.5492 39.0362 22.4525L23.679 34.015L23.6694 34.0078ZM39.0266 8.57026L23.6694 20.1328C22.4696 21.0361 20.5212 21.0361 19.3214 20.1328L3.96429 8.57026C2.76451 7.66694 2.76451 6.19995 3.96429 5.29663C5.16406 4.39331 7.1125 4.39331 8.31228 5.29663L21.5002 15.2259L34.6882 5.30386C35.8879 4.40054 37.8364 4.40054 39.0362 5.30386C40.2359 6.20718 40.2359 7.67417 39.0362 8.57749L39.0266 8.57026Z" fill="white"/>
+</svg>
+
         </div>
       </div>
     </div>
