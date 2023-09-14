@@ -3,12 +3,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  function scrollto(idPath:string, e: React.MouseEvent<HTMLAnchorElement>) {
+    e.preventDefault(); // Prevent the default behavior of anchor tags
 
+    console.log(idPath)
+    const aboutSection = document.getElementById(idPath);
+    if (aboutSection) {
+      aboutSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
   return (
     <div className="z-[2] fixed">
         {!isOpen&&
@@ -46,22 +57,22 @@ function Sidebar() {
             <nav className="md:flex flex-col h-full ml-7 mt-20 text-3xl">
               <ul>
                 <li>
-                  <Link href="/"><i className="fas fa-home mr-5 w-10"></i>Home</Link>
+                  <a href="#" onClick={(e) => scrollto("home", e)}><i className="fas fa-home mr-5 w-10"></i>Home</a>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about">  <i className="fas fa-user mr-5 w-7"></i> ABOUT ME</Link>
+                  <a href="#" onClick={(e) => scrollto("about", e)}>  <i className="fas fa-user mr-5 w-7"></i> ABOUT ME</a>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i className="fas fa-code mr-5"></i>DEVELOPMENT</Link>
+                  <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-code mr-5"></i>DEVELOPMENT</a>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i className="fas fa-briefcase mr-5 w-10 "></i>EXPERIENCE</Link>
+                  <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-briefcase mr-5 w-10 "></i>EXPERIENCE</a>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i className="fas fa-envelope mr-5 w-10"></i>CONTACT</Link>
+                  <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-envelope mr-5 w-10"></i>CONTACT</a>
                 </li>
                 <li className="mt-5">
-                  <Link href="/about"><i className="fas fa-file-alt mr-5 w-10"></i>RESUME</Link>
+                  <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-file-alt mr-5 w-10"></i>RESUME</a>
                 </li>
                 {/* Add more sidebar links as needed */}
               </ul>

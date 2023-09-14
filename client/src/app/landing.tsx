@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, {
   Dispatch,
@@ -43,7 +44,7 @@ const Landing = () => {
           </div>
                    <div className="z-[0] w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
             {" "}
-            Contact me
+            Let's Talk
           </div>
           <div className="flex  text-md sm:text-xl  ">
             <span className="flex flex-wrap  my-2 sm:my-1  bg-gradient-to-r from-[#ECFDFE] to-[#a8b9f2] bg-clip-text text-transparent" >
