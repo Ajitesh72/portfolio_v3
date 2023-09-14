@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
 .fontGamja{
-  font-family: 'Gamja Flower';
+  font-family: 'Gamja Flower', cursive;
 }
+.fontadlam{
+  font-family: 'ADLaM Display', cursive;}
 body{
   background-color:#09123D;
 }
