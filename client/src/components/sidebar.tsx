@@ -12,6 +12,7 @@ function Sidebar() {
     e.preventDefault(); // Prevent the default behavior of anchor tags
 
     console.log(idPath)
+    setIsOpen(false);
     const aboutSection = document.getElementById(idPath);
     if (aboutSection) {
       aboutSection.scrollIntoView({
@@ -32,7 +33,7 @@ function Sidebar() {
             animate={{ x: 0 }}
             exit={{ x: -300 }}
             transition={{ duration: 0.3 }}
-            className="fixed text-white inset-y-0 left-0 w-96 bg-gradient-to-b from-indigo-900 to-purple-900  border-r border-purple-900"
+            className="fixed text-white inset-y-0 left-0 w-96  bg-gradient-to-b from-indigo-900 to-purple-900  border-r border-purple-900"
           >
                 <svg
                 onClick={toggleSidebar}
@@ -74,7 +75,6 @@ function Sidebar() {
                 <li className="mt-5">
                   <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-file-alt mr-5 w-10"></i>RESUME</a>
                 </li>
-                {/* Add more sidebar links as needed */}
               </ul>
             </nav>
           </motion.div>
