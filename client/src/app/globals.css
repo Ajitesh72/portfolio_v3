@@ -6,10 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
 .fontGamja{
-  font-family: 'Gamja Flower', cursive;
+  /* font-family: 'Gamja Flower', cursive; */
+  font-family: 'ADLaM Display', cursive;
 }
 .fontadlam{
-  font-family: 'ADLaM Display', cursive;}
+  font-family: 'ADLaM Display', cursive;
+}
 body{
   background-color:#09123D;
 }

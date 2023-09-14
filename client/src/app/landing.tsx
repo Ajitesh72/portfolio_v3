@@ -7,29 +7,30 @@ import React, {
   useState,
 } from "react";
 import Image from "next/image";
-
-// import { motion } from "framer-motion";
+import Sidebar from "@/components/sidebar";
+import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
     <div className="bg-[#09123D] h-screen relative">
-      <div className="w-screen h-[40vh] sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 rounded-full blur-[300px]" />
+      <div className="w-screen h-[40vh] sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 z-0 rounded-full blur-[300px]" />
+      <Sidebar/>
       <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-[30vh] rounded-full blur-[300px]" />
       <Image
       src="/photos/topRight.png"
       width={700}
       height={700}
-      className=" absolute top-[0vh] -[10vh] md:top-0 md:right-0 z-0 blur-[3px]"
+      className=" absolute top-[0vh] -[10vh] md:top-0 md:right-0 z-[0] blur-[3px]"
       alt="Picture of the topmesh"
-    />
+      />
       <Image
       src="/photos/puzzle-piece-outline.png"
       width={200}
       height={200}
       className="absolute bottom-[-2em] left-[-3em]"
       alt="Picture of the puzzle"
-    />
-      <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10">
+      />
+      <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10 md:pb-20">
         {/* left part */}
         <div className="relative md:w-screen xl:w-[100vh]">
           <div className="w-full flex font-bold text-white text-5xl mb-5 fontGamja xl:text-6xl   mt-4">
@@ -40,7 +41,7 @@ const Landing = () => {
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
-                   <div className="w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
+                   <div className="z-[0] w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
             {" "}
             Contact me
           </div>
