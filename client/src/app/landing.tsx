@@ -12,6 +12,17 @@ import Sidebar from "@/components/sidebar";
 import { motion } from "framer-motion";
 
 const Landing = () => {
+  function scrollto(idPath:string) {
+    console.log(idPath)
+    const aboutSection = document.getElementById(idPath);
+    if (aboutSection) {
+      aboutSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+
   return (
     <div className="bg-[#09123D] h-screen relative">
       <div className="w-screen h-[40vh] sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 z-0 rounded-full blur-[300px]" />
@@ -53,6 +64,7 @@ const Landing = () => {
             {/* E-mail */}
             <div className="flex flex-wrap h-10 w-10  rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 sm:ml-5 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
               <svg
+              // onClick={(e) => scrollto("about")}
                 className="h-full w-full px-2 py-2 justify-center items-center"
                 viewBox="0 0 52 40"
                 fill="none"
@@ -94,7 +106,10 @@ const Landing = () => {
             </div>
           </div>
           <div className="w-full  cursor-pointer mt-20 justify-center flex md:hidden   animate-custom-bounce">
-        <svg width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg 
+                onClick={(e) => scrollto("about")}
+
+        width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.6694 34.0078C22.4696 34.9111 20.5212 34.9111 19.3214 34.0078L3.96429 22.4453C2.76451 21.5419 2.76451 20.075 3.96429 19.1716C5.16406 18.2683 7.1125 18.2683 8.31228 19.1716L21.5002 29.1009L34.6882 19.1789C35.8879 18.2755 37.8364 18.2755 39.0362 19.1789C40.2359 20.0822 40.2359 21.5492 39.0362 22.4525L23.679 34.015L23.6694 34.0078ZM39.0266 8.57026L23.6694 20.1328C22.4696 21.0361 20.5212 21.0361 19.3214 20.1328L3.96429 8.57026C2.76451 7.66694 2.76451 6.19995 3.96429 5.29663C5.16406 4.39331 7.1125 4.39331 8.31228 5.29663L21.5002 15.2259L34.6882 5.30386C35.8879 4.40054 37.8364 4.40054 39.0362 5.30386C40.2359 6.20718 40.2359 7.67417 39.0362 8.57749L39.0266 8.57026Z" fill="white"/>
 </svg>
 
@@ -111,7 +126,9 @@ const Landing = () => {
     />
         </div>
         <div className="h-full  cursor-pointer hidden ml-5 md:flex justify-center items-end animate-custom-bounce">
-        <svg width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg 
+        onClick={(e) => scrollto("about")}
+        width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.6694 34.0078C22.4696 34.9111 20.5212 34.9111 19.3214 34.0078L3.96429 22.4453C2.76451 21.5419 2.76451 20.075 3.96429 19.1716C5.16406 18.2683 7.1125 18.2683 8.31228 19.1716L21.5002 29.1009L34.6882 19.1789C35.8879 18.2755 37.8364 18.2755 39.0362 19.1789C40.2359 20.0822 40.2359 21.5492 39.0362 22.4525L23.679 34.015L23.6694 34.0078ZM39.0266 8.57026L23.6694 20.1328C22.4696 21.0361 20.5212 21.0361 19.3214 20.1328L3.96429 8.57026C2.76451 7.66694 2.76451 6.19995 3.96429 5.29663C5.16406 4.39331 7.1125 4.39331 8.31228 5.29663L21.5002 15.2259L34.6882 5.30386C35.8879 4.40054 37.8364 4.40054 39.0362 5.30386C40.2359 6.20718 40.2359 7.67417 39.0362 8.57749L39.0266 8.57026Z" fill="white"/>
 </svg>
 

@@ -1,13 +1,37 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+
+  useEffect(() => {
+    // Add a scroll event listener to track scroll position
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setIsScrolled(scrollY < lastScrollY ? true : false);
+      if(scrollY===0){
+        setIsScrolled(false)
+      }
+      setLastScrollY(scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+
   function scrollto(idPath:string, e: React.MouseEvent<HTMLAnchorElement>) {
     e.preventDefault(); // Prevent the default behavior of anchor tags
 
@@ -24,7 +48,17 @@ function Sidebar() {
   return (
     <div className="z-[2] fixed">
         {!isOpen&&
-        <svg onClick={toggleSidebar} className="ml-5 mt-5 md:ml-10 cursor-pointer" fill="" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+         <div className={`fixed top-0 left-0 w-screen  ${isScrolled ? 'bg-violet-900' : ''}`}>
+         <svg
+           onClick={toggleSidebar}
+           className={`ml-5 mt-2 mb-2 md:mt-5 md:mb-5 md:ml-10 cursor-pointer ${isScrolled ? 'fill-white' : 'fill-black h-[3em]'}`}
+           xmlns="http://www.w3.org/2000/svg"
+           height="2em"
+           viewBox="0 0 448 512"
+         >
+           <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+         </svg>
+       </div>
         }
       <AnimatePresence>
         {isOpen && (
