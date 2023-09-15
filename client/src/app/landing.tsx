@@ -32,7 +32,7 @@ const Landing = () => {
       src="/photos/topRight.png"
       width={700}
       height={700}
-      className=" absolute top-[0vh] -[10vh] md:top-0 md:right-0 z-[0] blur-[3px]"
+      className=" absolute top-[0vh]  md:top-0 md:right-0 z-[0] blur-[3px]"
       alt="Picture of the topmesh"
       />
       <Image
@@ -45,7 +45,7 @@ const Landing = () => {
       <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10 md:pb-20">
         {/* left part */}
         <div className="relative mt-20 md:w-screen xl:w-[100vh]">
-          <div className="w-full flex font-bold text-white text-5xl mt-5 fontGamja xl:text-6xl   mt-4">
+          <div className="w-full flex font-bold text-white text-5xl mt45 fontGamja xl:text-6xl   mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
          

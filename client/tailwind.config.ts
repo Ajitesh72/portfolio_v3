@@ -13,6 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        '2xs': '323px',  // Custom breakpoint for screens smaller than 'sm'
+        'xs': '422px',  // Custom breakpoint for screens smaller than 'sm'
+        'sm': '640px',  // Default 'sm' breakpoint
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
     },
   },
   plugins: [],
