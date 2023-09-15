@@ -9,6 +9,7 @@ export default function Home() {
       <div id="about">
       <About/>
       </div>
+      <br/>
     </main>
   )
 }
