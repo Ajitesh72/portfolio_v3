@@ -11,7 +11,7 @@ function WebDev() {
     <main>
       <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-20vh] rounded-full blur-[300px]" />
     <div className="container py-5">
-    <a className="box box--4 h-[75vh] sm:h-auto " onMouseEnter={() => setShow(true)}
+    <a className="box box--4 h-[55vh] sm:h-auto " onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
           >
         <div className="box__content my-5">
@@ -31,7 +31,7 @@ function WebDev() {
             <span>Hey!</span>
             <span>There</span>
             70%! $$
-            {show && <span className=" box__title box__title--top text-center w-full pl-10 ">View Ajitesh </span>}
+            {show && <span className="hidden sm:flex box__title box__title--top text-center w-full pl-10 ">View Ajitesh </span>}
             {!show && <span className="box__title box__title--top ">View Ajitesh</span>}
             {/* <span className="box__title box__title--top flex sm:hidden">view</span> */}
             <span>80%</span>$$!
