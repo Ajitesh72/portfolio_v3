@@ -1,5 +1,7 @@
 import Landing from "./landing"
 import About from "./pages/aboutme"
+import WebDev from "@/components/webdev"
+import Footer from "./pages/footer"
 export default function Home() {
   return (
     <main>
@@ -9,7 +11,10 @@ export default function Home() {
       <div id="about">
       <About/>
       </div>
-      <br/>
+      {/* <div id="web"> */}
+      {/* <Footer/> */}
+      {/* </div> */}
+
     </main>
   )
 }

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "./footer";
+import WebDev from "@/components/webdev";
 
 function About() {
   return (
@@ -54,9 +55,11 @@ function About() {
         </div>
         </div>
       </div>
-      <br/>
-      <br/>
-      <Footer/>
+      <div id="webdev">
+        <br/>
+        <br/>
+      <WebDev/>
+      </div>
     </div>
   );
 }
