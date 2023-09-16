@@ -6,13 +6,13 @@ import Image from "next/image";
 
 function policy() {
   return (
-    <main className="flex flex-col mx-5  text-center items-center justify-center h-screen">
+    <main className="flex flex-col  text-center items-center justify-center h-screen bg-[#011623]">
       <Image
         src="/photos/enjoy.gif" // Replace with the path to your 404 image
         alt="leo image"
         width={300}
         height={300}
-        className="mt-8"
+        className="mt-8 h-60 w-80 rounded-full"
       />
       <br/>
     <div className="text-4xl font-bold text-gray-200">No Such Policy,clone it & Enjoy!</div>
