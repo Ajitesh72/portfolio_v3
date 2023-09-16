@@ -36,6 +36,31 @@ body{
 }
 
 
+.web-bgd {
+  background: linear-gradient(90deg, rgb(150, 161, 231) 0%, rgb(140, 140, 221) 34%, rgb(193, 206, 250) 100%);
+  background-size: 150% 70%;
+  animation: gradient 4s linear infinite; /* Adjust animation duration */
+  height: 20vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 
 

@@ -1,6 +1,6 @@
 import Landing from "./landing"
 import About from "./pages/aboutme"
-import WebDev from "@/components/webdev"
+// import WebDev from "@/app/pages/webdev"
 import Footer from "./pages/footer"
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       {/* <div id="web"> */}
       {/* <Footer/> */}
       {/* </div> */}
+      
 
     </main>
   )

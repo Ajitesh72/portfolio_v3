@@ -17,49 +17,50 @@ function About() {
       <div className="flex flex-wrap justify-center gap-10 items-center text-white mx-5 md:mx-10">
         <div className="mt-10  h-72 w-60 2xs:w-72 bg-white">
           <Image
-      src="/photos/ajitesh_pic.jpeg"
-      width={400}
-      height={600}
-      className=" absolute p-2 h-72 w-60 2xs:w-72"
-      alt="Picture of the topmesh"
-      />
+            src="/photos/ajitesh_pic.jpeg"
+            width={400}
+            height={600}
+            className=" absolute p-2 h-72 w-60 2xs:w-72"
+            alt="Picture of the topmesh"
+          />
         </div>
         <div className="mx-5 md:mx-0">
+          <div className="text-end text-4xl md:text-7xl pb-5 sm:pb-10">
+            ABOUT ME
+          </div>
+          <div className="w-72 2xs:w-80 xs:w-96 sm:w-[80vh] px-5 py-5 bg-[#0F172A] sm:text-lg">
+            <span className="text-6xl">W</span>
+            <span>
+              hat's up? I’m Ajitesh, a student specializing in Computer Science
+              & Engineering at Mumbai University, who is currently looking for a
+              role as SDE Intern.
+            </span>
+            <br />
+            <br />
+            <span className="ml-10">The</span>
+            <span>
+              {" "}
+              passion to create and innovate has always been in me. I strive to
+              build quality, intuitive, and robust software with the goal of
+              learning and improving my skills.
+            </span>
+            <br />
+            <br />
+            <span className="ml-10">My</span>
+            <span>
+              {" "}
+              expertise include Typescript, CSS, MERN stack and GCP. Recently I
+              have been intrigue with Deep Learning Model. Aside from coding, I
+              enjoy playing table tennis, video games, and Football.
+            </span>
+          </div>
+        </div>
+      </div>
 
-        <div className="text-end text-4xl md:text-7xl pb-5 sm:pb-10">ABOUT ME</div>
-        <div className="w-72 2xs:w-80 xs:w-96 sm:w-[80vh] px-5 py-5 bg-[#0F172A] sm:text-lg">
-          <span className="text-6xl">W</span>
-          <span>
-            hat's up? I’m Ajitesh, a student specializing in Computer Science &
-            Engineering at Mumbai University, who is currently looking for a
-            role as SDE Intern.
-          </span>
-          <br />
-          <br />
-          <span className="ml-10">The</span>
-          <span>
-            {" "}
-            passion to create and innovate has always been in me. I strive to
-            build quality, intuitive, and robust software with the goal of
-            learning and improving my skills.
-          </span>
-          <br />
-          <br />
-          <span className="ml-10">My</span>
-          <span>
-            {" "}
-            expertise include Typescript, CSS, MERN stack and GCP. Recently I
-            have been intrigue with Deep Learning Model. Aside from coding, I
-            enjoy playing table tennis, video games, and Football.
-          </span>
-        </div>
-        </div>
-      </div>
-      <div id="webdev">
-        <br/>
-        <br/>
-      <WebDev/>
-      </div>
+      {/* web dev-about me */}
+      <br />
+        <WebDev />
+        <Footer/>
     </div>
   );
 }
