@@ -8,14 +8,17 @@ import Footer from "@/app/pages/footer";
 function WebDev() {
   const [show, setShow] = useState(false);
   return (
-    <main className="h-[70vh] relative">
+    <main className="h-[65vh] md:h-[90vh] relative">
       <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-20vh] rounded-full blur-[300px]" />
 
       <div className="container pt-5 ">
-        <div className="web-bgd w-full h-[20vh] absolute">
+        <div data-aos="fade-right"
+          data-aos-delay="600" className="moving-gradient-1 w-full h-[20vh] absolute">
           {/* this is the bg to main div */}
         </div>
         <a
+         data-aos="slide-up"
+         data-aos-delay="200"
           className="box box--4 h-[55vh] sm:h-auto "
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
@@ -54,13 +57,13 @@ function WebDev() {
               </span>
             )}
             $<span>90% off</span>$<span>92% OFF</span>
-            <span>SALE</span>
+            <span>I AM</span>
             94%
-            <span>BEST OFFER</span>
-            <span>the full</span>$ 95%!
+            <span>IRON MAN</span>
+            <span>the BEST</span>$ 95%!
             <span>Limited time</span>
-            97%<span>off sale</span>
-            <span>special OFFER</span>
+            97%<span>in town</span>
+            <span>Full Stack</span>
           </div>
         </a>
       </div>

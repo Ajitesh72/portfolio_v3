@@ -44,12 +44,19 @@ const Landing = () => {
       />
       <div className="text-white flex justify-between h-screen items-center mx-5 md:mx-10 md:pb-20">
         {/* left part */}
-        <div className="relative mt-20 md:w-screen xl:w-[100vh]">
-          <div className="w-full flex font-bold text-white text-5xl mt45 fontGamja xl:text-6xl   mt-4">
+        <div data-aos="fade-right"
+    data-aos-delay="200"
+    className="relative mt-20 md:w-screen xl:w-[100vh]">
+          
+          {/* changes */}
+          <div  data-aos="fade-up"
+  data-aos-delay="600"
+  className="w-full flex font-bold text-white text-5xl mt45 fontGamja xl:text-6xl   mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
+          {/* changes */}
          
-          <div className="w-full flex flex-wrap text-sm xl:text-2xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
+          <div  className="w-full flex flex-wrap text-sm xl:text-2xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
@@ -105,7 +112,8 @@ const Landing = () => {
               </svg>
             </div>
           </div>
-          <div className="w-full  cursor-pointer mt-20 justify-center flex md:hidden   animate-custom-bounce">
+          <div  data-aos="fade-right"
+          data-aos-delay="600" className="w-full  cursor-pointer mt-20 justify-center flex md:hidden   animate-custom-bounce">
         <svg 
                 onClick={(e) => scrollto("about")}
 
@@ -118,6 +126,7 @@ const Landing = () => {
         {/* right part */}
         <div className="relative hidden md:flex h-screen/2 ml-10 xl:ml-20 ">
         <Image
+        data-aos="fade-down"
       src="/photos/monster.png"
       width={700}
       height={900}
@@ -125,7 +134,8 @@ const Landing = () => {
       alt="Picture of the Monster"
     />
         </div>
-        <div className="h-full  cursor-pointer hidden ml-5 md:flex justify-center items-end animate-custom-bounce">
+        <div  data-aos="fade-in"
+          data-aos-delay="100" className="h-full  cursor-pointer hidden ml-5 md:flex justify-center items-end animate-custom-bounce">
         <svg 
         onClick={(e) => scrollto("about")}
         width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">

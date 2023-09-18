@@ -1,21 +1,24 @@
-import Landing from "./landing"
-import About from "./pages/aboutme"
+import Landing from "./landing";
+import About from "./pages/aboutme";
 // import WebDev from "@/app/pages/webdev"
-import Footer from "./pages/footer"
+import Footer from "./pages/footer";
+import Development from "./pages/development";
+
 export default function Home() {
   return (
     <main>
       <div id="home">
-      <Landing/>
+        <Landing />
       </div>
       <div id="about">
-      <About/>
+        <About />
       </div>
-      {/* <div id="web"> */}
-      {/* <Footer/> */}
-      {/* </div> */}
-      
-
+      <div id="development">
+        <Development />
+      </div>
+      <div id="footer">
+        <Footer/>
+      </div>
     </main>
-  )
+  );
 }

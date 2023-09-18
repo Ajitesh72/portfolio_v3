@@ -1,8 +1,11 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Portfolio_v3',
@@ -14,11 +17,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      // duration: 000, // Animation duration
+      easing: 'ease-in-out', // Animation easing
+      once: false, // Animation only happens once per element
+    });
+  }, []); // Empty dependency array to ensure it runs only once
+
   return (
     <html lang="en">
       <body className={inter.className}>
         {children}
-        </body>
+      </body>
     </html>
   )
 }
