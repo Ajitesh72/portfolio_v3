@@ -12,7 +12,7 @@ function About() {
     data-aos-delay="300" className="relative">
       <div className="w-screen h-[50vh] xs:h-[40vh]  sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 z-0 rounded-full blur-[300px]" />
       {/* <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-[30vh] rounded-full blur-[300px]" /> */}
-      <div className="text-[#C5D0DC] text-7xl pt-20 sm:pl-10 mx-5 md:mx-10">
+      <div className="font-bold text-[#C5D0DC] text-7xl pt-20 sm:pl-10 mx-5 md:mx-10">
         001
       </div>
       <div className="flex flex-wrap justify-center gap-10 items-center text-white mx-5 md:mx-10">
