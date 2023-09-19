@@ -14,7 +14,7 @@ export default function Home() {
     AOS.init({
       // duration: 000, // Animation duration
       easing: 'ease-in-out', // Animation easing
-      once: false, // Animation only happens once per element
+      once: true, // Animation only happens once per element
     });
   }, []); // Empty dependency array to ensure it runs only once
   return (

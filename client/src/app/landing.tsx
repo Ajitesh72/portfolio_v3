@@ -51,7 +51,7 @@ const Landing = () => {
           {/* changes */}
           <div  data-aos="fade-up"
   data-aos-delay="600"
-  className="w-full flex font-bold text-white text-5xl mt45 fontGamja xl:text-6xl   mt-4">
+  className="w-full flex font-bold text-white text-2xl 2xs:text-5xl mt45 fontGamja xl:text-6xl   mt-4">
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
           {/* changes */}

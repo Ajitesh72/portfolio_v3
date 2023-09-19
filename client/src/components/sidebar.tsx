@@ -91,22 +91,28 @@ function Sidebar() {
             {/* Sidebar Links */}
             <nav className="md:flex flex-col h-full ml-7 mt-20 text-3xl">
               <ul>
-                <li>
+                <li data-aos="fade-left"
+            data-aos-delay="50" >
                   <a href="#" onClick={(e) => scrollto("home", e)}><i className="fas fa-home mr-5 w-10"></i>Home</a>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5" data-aos="fade-right"
+            data-aos-delay="100">
                   <a href="#" onClick={(e) => scrollto("about", e)}>  <i className="fas fa-user mr-5 w-7"></i> ABOUT ME</a>
                 </li>
-                <li className="mt-5">
-                  <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-code mr-5"></i>DEVELOPMENT</a>
+                <li className="mt-5" data-aos="fade-up"
+            data-aos-delay="150">
+                  <a href="#" onClick={(e) => scrollto("development", e)}><i className="fas fa-code mr-5"></i>DEVELOPMENT</a>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5" data-aos="fade-down"
+            data-aos-delay="200">
                   <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-briefcase mr-5 w-10 "></i>EXPERIENCE</a>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5" data-aos="fade-left"
+            data-aos-delay="250">
                   <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-envelope mr-5 w-10"></i>CONTACT</a>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5" data-aos="fade-right"
+            data-aos-delay="300">
                   <a href="#" onClick={(e) => scrollto("about", e)}><i className="fas fa-file-alt mr-5 w-10"></i>RESUME</a>
                 </li>
               </ul>
