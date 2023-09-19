@@ -126,7 +126,6 @@ const Landing = () => {
         {/* right part */}
         <div className="relative hidden md:flex h-screen/2 ml-10 xl:ml-20 ">
         <Image
-        data-tilt data-tilt-startX="0" data-tilt-startY="0" data-tilt-reset-to-start="false"  
         data-aos="fade-down"
       src="/photos/monster.png"
       width={700}
