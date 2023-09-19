@@ -1,21 +1,31 @@
-"use client"
+"use client";
 import Landing from "./landing";
 import About from "./pages/aboutme";
 // import WebDev from "@/app/pages/webdev"
 import Footer from "./pages/footer";
 import Development from "./pages/development";
 import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import VanillaTilt from "vanilla-tilt";
 
 export default function Home() {
-    useEffect(() => {
+  useEffect(() => {
     // Initialize AOS
     AOS.init({
       // duration: 000, // Animation duration
-      easing: 'ease-in-out', // Animation easing
+      easing: "ease-in-out", // Animation easing
       once: true, // Animation only happens once per element
     });
+    // Initialize Vanilla Tilt on the element with class "tilt"
+    const tiltElement = document.querySelector("[data-tilt]") as HTMLElement;
+    if (tiltElement) {
+      VanillaTilt.init(tiltElement, {
+        reverse: true,
+        glare: true,
+        "max-glare": 0.8,
+      });
+    }
   }, []); // Empty dependency array to ensure it runs only once
   return (
     <main>
@@ -29,7 +39,7 @@ export default function Home() {
         <Development />
       </div>
       <div id="footer">
-        <Footer/>
+        <Footer />
       </div>
     </main>
   );

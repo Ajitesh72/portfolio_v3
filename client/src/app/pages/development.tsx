@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from "react";
+import React, { useState,useRef,useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+
 
 function Development() {
   return (
@@ -27,6 +28,7 @@ function Development() {
           {/* Content for the second box */}
           <div className="relative h-full w-full">
             <Image
+            data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="false" 
             data-aos="fade-right"
             data-aos-delay="400" 
               src="/photos/techmate-main.png"
@@ -41,26 +43,28 @@ function Development() {
           {/* Content for the third box */}
           <div className="relative h-full w-full">
             <Image
+            data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="false" 
             data-aos="fade-left"
             data-aos-delay="400" 
               src="/photos/octernship-main.png"
               width={600}
               height={600}
-              className="absolute top-0 left-0 h-full w-full hover:blur-[3px] rounded-xl"
+              className=" absolute top-0 left-0 h-full w-full hover:blur-[3px] rounded-xl"
               alt="Picture of the topmesh"
             />
           </div>
         </div>
         <div className="col-span-2 md:col-span-1 h-[30vh] md:h-[50vh] w-full sm:w-[50vw] md:w-full mt-10 md:mt-0">
           {/* Content for the second box */}
-          <div className="relative h-full w-full">
+          <div  className="relative h-full w-full">
             <Image
-            data-aos="fade-right"
+data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="false"            data-aos="fade-right"
             data-aos-delay="400" 
               src="/photos/xtract-main.png"
               width={600}
               height={600}
-              className="absolute top-0 left-0 h-full w-full hover:blur-[3px] rounded-xl"
+
+              className="absolute top-0 left-0 h-full w-full hover:blur-[3px] rounded-xl "
               alt="Picture of the topmesh"
             />
           </div>
