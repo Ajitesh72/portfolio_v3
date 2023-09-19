@@ -43,7 +43,7 @@ function Development() {
           {/* Content for the third box */}
           <div className="relative h-full w-full">
             <Image
-            data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="false" 
+            data-tilt data-tilt-startX="0" data-tilt-startY="0" data-tilt-reset-to-start="false" 
             data-aos="fade-left"
             data-aos-delay="400" 
               src="/photos/octernship-main.png"
