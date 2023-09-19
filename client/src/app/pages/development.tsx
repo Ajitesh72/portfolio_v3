@@ -28,7 +28,7 @@ function Development() {
           {/* Content for the second box */}
           <div className="relative h-full w-full">
             <Image
-            data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="false" 
+            data-tilt data-tilt-startX="0" data-tilt-startY="0" data-tilt-reset-to-start="false" 
             data-aos="fade-right"
             data-aos-delay="400" 
               src="/photos/techmate-main.png"
@@ -58,7 +58,7 @@ function Development() {
           {/* Content for the second box */}
           <div  className="relative h-full w-full">
             <Image
-data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="false"            data-aos="fade-right"
+data-tilt data-tilt-startX="0" data-tilt-startY="0" data-tilt-reset-to-start="false"            data-aos="fade-right"
             data-aos-delay="400" 
               src="/photos/xtract-main.png"
               width={600}
