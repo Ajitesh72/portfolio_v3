@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import VanillaTilt from "vanilla-tilt";
+import Experience from "./pages/experience";
 
 export default function Home() {
   useEffect(() => {
@@ -37,6 +38,9 @@ export default function Home() {
       </div>
       <div id="development">
         <Development />
+      </div>
+      <div id="experience">
+        <Experience />
       </div>
       <div id="footer">
         <Footer />

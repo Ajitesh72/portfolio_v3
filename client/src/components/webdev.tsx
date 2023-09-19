@@ -12,13 +12,16 @@ function WebDev() {
       <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-20vh] rounded-full blur-[300px]" />
 
       <div className="container pt-5 ">
-        <div data-aos="fade-right"
-          data-aos-delay="600" className="moving-gradient-1 w-full h-[20vh] absolute">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="600"
+          className="moving-gradient-1 w-full h-[20vh] absolute"
+        >
           {/* this is the bg to main div */}
         </div>
         <a
-         data-aos="slide-up"
-         data-aos-delay="200"
+          data-aos="slide-up"
+          data-aos-delay="200"
           className="box box--4 h-[55vh] sm:h-auto "
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
@@ -50,9 +53,24 @@ function WebDev() {
             {/* <span className="box__title box__title--top flex sm:hidden">view</span> */}
             <span>80%</span>$$!
             <span>85% off</span>
-            {!show && <span className="box__title ">@Ajitesh72</span>}$
+            {!show && (
+              <span
+                className="box__title "
+                onClick={() =>
+                  window.open("https://github.com/Ajitesh72", "_blank")
+                }
+              >
+                @Ajitesh72
+              </span>
+            )}
+            $
             {show && (
-              <span className="box__title text-center w-full mb-20 sm:pl-20 sm:mb-0">
+              <span
+                className="box__title text-center w-full mb-20 sm:pl-20 sm:mb-0"
+                onClick={() =>
+                  window.open("https://github.com/Ajitesh72", "_blank")
+                }
+              >
                 @Ajitesh72
               </span>
             )}
@@ -67,7 +85,6 @@ function WebDev() {
           </div>
         </a>
       </div>
-     
     </main>
   );
 }
