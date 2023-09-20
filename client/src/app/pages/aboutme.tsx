@@ -19,7 +19,7 @@ function About() {
         <div className="mt-10  h-72 w-60 2xs:w-72 moving-gradient-1">
           <Image
           data-aos="fade-right"
-          data-aos-delay="900" 
+          data-aos-delay="200" 
             src="/photos/ajitesh_pic.jpeg"
             width={400}
             height={600}
@@ -30,7 +30,7 @@ function About() {
         <div className="mx-5 md:mx-0">
           <div
           data-aos="fade-right"
-          data-aos-delay="800" 
+          data-aos-delay="300" 
           className="text-end text-4xl md:text-7xl pb-5 sm:pb-10">
             ABOUT ME
           </div>
