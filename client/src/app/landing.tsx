@@ -47,7 +47,7 @@ const Landing = () => {
         <div
           data-aos="fade-right"
           data-aos-delay="200"
-          className="relative mt-20 md:w-screen xl:w-[100vh]"
+          className="relative mt-20 md:w-[130vh] xl:w-[100vh]"
         >
           {/* changes */}
           <div
@@ -140,13 +140,24 @@ className="h-10 w-10  flex rounded-full bg-gradient-to-b from-indigo-700 to-purp
           </div>
         </div>
         {/* right part */}
+        {/* <div className="relative hidden md:flex items-center h-full ml-10 xl:ml-20 ">
+          <Image
+            data-aos="fade-down"
+            src="/photos/monster.png"
+            width={700}
+            height={700}
+            className="h-full pt-40 hidden md:flex"
+            alt="Picture of the Monster"
+          />
+        </div> */}
+        {/* puraana */}
         <div className="relative hidden md:flex h-screen/2 ml-10 xl:ml-20 ">
           <Image
             data-aos="fade-down"
             src="/photos/monster.png"
             width={700}
             height={900}
-            className="z-0 h-screen pt-20 xl:px-20 hidden md:flex"
+            className="z-0 h-screen  pt-20 xl:px-20 hidden md:flex"
             alt="Picture of the Monster"
           />
         </div>
