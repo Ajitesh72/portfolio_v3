@@ -57,6 +57,38 @@ body{
   height: 20vh;
 }
 
+.square-list-item {
+  position: relative;
+  padding-left: 1.5em; /* Adjust as needed for square size */
+  color: rgb(255, 255, 255); /* Text color */
+}
+
+.square-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.5em; /* Adjust as needed for square size */
+  height: 0.5em; /* Adjust as needed for square size */
+  background-color: rgb(255, 255, 255); /* Square background color (change 'red' to your desired color) */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+/* Hover effect on the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
