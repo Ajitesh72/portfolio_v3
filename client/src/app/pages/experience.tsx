@@ -87,7 +87,7 @@ function Experience() {
         </div>
       </div>
       <div className="text-white w-full flex flex-col items-center mt-10 mb-10">
-        <div className="w-[50vh] sm:w-[100vh] h-[50vh] bg-white relative">
+        <div className="w-[42vh] 2xs:w-[50vh] sm:w-[100vh] h-[50vh] bg-white  relative">
           <div className="h-full w-full flex justify-center items-center">
             <Image
               data-aos="fade-down"
@@ -126,8 +126,8 @@ function Experience() {
           </div>
         </div>
 
-        <div className="sm:flex w-[50vh] sm:w-[100vh] h-[50vh] ">
-          <div className="moving-gradient-1 w-[50vh] h-full  flex justify-center items-center relative">
+        <div className="sm:flex w-[42vh] 2xs:w-[50vh] sm:w-[100vh] h-[50vh] ">
+          <div className="moving-gradient-1 w-[42vh] 2xs:w-[50vh] h-full  flex justify-center items-center relative">
             <Image
               data-aos="fade-down"
               src="/photos/arb.jpeg"
@@ -163,7 +163,7 @@ function Experience() {
               {/* main content ends */}
             </div>
           </div>
-          <div className="moving-gradient-1 w-[50vh] h-full  flex justify-center items-center relative">
+          <div className="moving-gradient-1 w-[42vh] 2xs:w-[50vh] h-full  flex justify-center items-center relative">
             <Image
               data-aos="fade-down"
               src="/photos/ivy.png"

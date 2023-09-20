@@ -32,7 +32,7 @@ function Footer() {
 
   <div className="text-center">
     <a data-aos="fade-up" className="nav-text text-gray-700 dark:text-gray-50" href="https://github.com/Ajitesh72" target="_blank">
-      Designed & Built by Ajitesh Dubey @ <time>2023</time>
+      Designed & Built by Ajitesh Dubey @<time>2023</time>
     </a>
   </div>
 

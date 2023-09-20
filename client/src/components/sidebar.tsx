@@ -112,17 +112,17 @@ function Sidebar() {
                   </a>
                 </li>
                 <li className="mt-5" data-aos="fade-down" data-aos-delay="200">
-                  <a href="#" onClick={(e) => scrollto("about", e)}>
+                  <a href="#" onClick={(e) => scrollto("experience", e)}>
                     <i className="fas fa-briefcase mr-5 w-10 "></i>EXPERIENCE
                   </a>
                 </li>
                 <li className="mt-5" data-aos="fade-left" data-aos-delay="250">
-                  <a href="#" onClick={(e) => scrollto("about", e)}>
+                  <a href="#" onClick={(e) => scrollto("footer", e)}>
                     <i className="fas fa-envelope mr-5 w-10"></i>CONTACT
                   </a>
                 </li>
                 <li className="mt-5" data-aos="fade-right" data-aos-delay="300">
-                  <a href="#" onClick={(e) => scrollto("about", e)}>
+                  <a href="#"  onClick={() => window.open('https://www.linkedin.com/in/ajitesh-dubey-4b5852220/', '_blank')}>
                     <i className="fas fa-file-alt mr-5 w-10"></i>RESUME
                   </a>
                 </li>
