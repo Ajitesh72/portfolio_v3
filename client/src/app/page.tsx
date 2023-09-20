@@ -39,9 +39,9 @@ export default function Home() {
       <div id="development">
         <Development />
       </div>
-      {/* <div id="experience">
+      <div id="experience">
         <Experience />
-      </div> */}
+      </div>
       <div id="footer">
         <Footer />
       </div>
