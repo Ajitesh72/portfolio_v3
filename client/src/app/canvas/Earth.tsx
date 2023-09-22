@@ -43,7 +43,7 @@ const Earth = () => {
 
   // Assign the material to the 3D object
   earth.scene.traverse((child) => {
-    if (child.isMesh) {
+    if (child instanceof THREE.Mesh) {
       child.material = material;
     }
   });
