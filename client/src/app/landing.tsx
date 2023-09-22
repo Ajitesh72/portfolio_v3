@@ -63,8 +63,15 @@ const Landing = () => {
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
-          <div   onClick={() => window.open('https://www.linkedin.com/in/ajitesh-dubey-4b5852220/', '_blank')}
-className="z-[0] w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl">
+          <div
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/ajitesh-dubey-4b5852220/",
+                "_blank"
+              )
+            }
+            className="z-[0] w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 font-semi-bold cursor-pointer bg-gradient-to-b from-indigo-700 to-fuchsia-500 hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500 rounded-full flex justify-center items-center text-2xl xl:text-3xl"
+          >
             {" "}
             Let's Talk
           </div>
@@ -73,8 +80,10 @@ className="z-[0] w-full md:w-full/5 my-4 mr-20  md:pr-0 xl:my-6 h-12 xl:h-12 fon
               Reach out to me via:
             </span>
             {/* E-mail */}
-            <div   onClick={() => window.open('mailto:dubeyajitesh07@gmail.com')}
-className="flex flex-wrap h-10 w-10  rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 sm:ml-5 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
+            <div
+              onClick={() => window.open("mailto:dubeyajitesh07@gmail.com")}
+              className="flex flex-wrap h-10 w-10  rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 sm:ml-5 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500"
+            >
               <svg
                 // onClick={(e) => scrollto("about")}
                 className="h-full w-full px-2 py-2 justify-center items-center"
@@ -89,8 +98,12 @@ className="flex flex-wrap h-10 w-10  rounded-full bg-gradient-to-b from-indigo-7
               </svg>
             </div>
             {/* Instagram */}
-            <div onClick={() => window.open('https://www.instagram.com/ajitesh._/', '_blank')}
-className="h-10 w-10  flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 xs:ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
+            <div
+              onClick={() =>
+                window.open("https://www.instagram.com/ajitesh._/", "_blank")
+              }
+              className="h-10 w-10  flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 xs:ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500"
+            >
               <svg
                 className="h-full w-full px-2 py-2  justify-center items-center"
                 viewBox="0 0 52 45"
@@ -104,8 +117,15 @@ className="h-10 w-10  flex rounded-full bg-gradient-to-b from-indigo-700 to-purp
               </svg>
             </div>
             {/* linkedin */}
-            <div   onClick={() => window.open('https://www.linkedin.com/in/ajitesh-dubey-4b5852220/', '_blank')}
-className="h-10 w-10  flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 xs:ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500">
+            <div
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/ajitesh-dubey-4b5852220/",
+                  "_blank"
+                )
+              }
+              className="h-10 w-10  flex rounded-full bg-gradient-to-b from-indigo-700 to-purple-500 ml-2 xs:ml-7 cursor-pointer hover:bg-gradient-to-b hover:from-indigo-900 hover:to-purple-500"
+            >
               <svg
                 className="h-full w-full px-2 py-2  justify-center items-center"
                 viewBox="0 0 46 35"

@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
 
-@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
-.fontGamja{
-  font-family: 'Gamja Flower', ;
+.fontGamja {
+  font-family: "Gamja Flower";
   /* font-family: 'ADLaM Display'; */
 }
-.fontadlam{
-  font-family: 'ADLaM Display', cursive;
+.fontadlam {
+  font-family: "ADLaM Display", cursive;
 }
-.montserrat{
+.montserrat {
   font-family: "Montserrat", sans-serif;
 }
 .moving-gradient-1 {
@@ -33,15 +33,16 @@
   background-position: top;
   animation: gradient-animation-y 7s infinite ease-in-out;
 }
-body{
-  background-color:#09123D;
+body {
+  background-color: #09123d;
 }
 @keyframes custom-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Adjust the bounce height as needed */
+    transform: translateY(-10px); /*  bounce height  */
   }
 }
 
@@ -49,17 +50,21 @@ body{
   animation: custom-bounce 1s ease-in-out infinite;
 }
 
-
 .web-bgd {
-  background: linear-gradient(90deg, rgb(150, 161, 231) 0%, rgb(140, 140, 221) 34%, rgb(193, 206, 250) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(150, 161, 231) 0%,
+    rgb(140, 140, 221) 34%,
+    rgb(193, 206, 250) 100%
+  );
   background-size: 150% 70%;
-  animation: gradient 4s linear infinite; /* Adjust animation duration */
+  animation: gradient 4s linear infinite; /* animation duration */
   height: 20vh;
 }
 
 .square-list-item {
   position: relative;
-  padding-left: 1.5em; /* Adjust as needed for square size */
+  padding-left: 1.5em; /* square size */
   color: rgb(255, 255, 255); /* Text color */
 }
 
@@ -68,9 +73,13 @@ body{
   position: absolute;
   left: 0;
   top: 0.5em;
-  width: 0.5em; /* Adjust as needed for square size */
-  height: 0.5em; /* Adjust as needed for square size */
-  background-color: rgb(255, 255, 255); /* Square background color (change 'red' to your desired color) */
+  width: 0.5em; /* square size */
+  height: 0.5em; /* square size */
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); 
 }
 
 /* Scrollbar Track */
@@ -106,12 +115,3 @@ body{
     background-position: 100% 50%;
   }
 }
-
-
-
-
-
-
-
-
-

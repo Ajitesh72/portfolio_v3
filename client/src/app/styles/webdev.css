@@ -14,8 +14,6 @@
   }
 }
 
-
-
 a {
   text-decoration: none;
   color: white;
@@ -151,11 +149,13 @@ a {
 .box__text-svg--reverse {
   animation: rotateReverse normal infinite calc(var(--time-s) * 50) linear;
 }
-.box--1, .box--4 {
+.box--1,
+.box--4 {
   width: 60vw;
 }
 @media (max-width: 768px) {
-  .box--1, .box--4 {
+  .box--1,
+  .box--4 {
     width: 94vw;
     padding-bottom: 46vw;
   }
@@ -235,21 +235,23 @@ a {
 }
 .box--4 {
   background-color: var(--color-black);
-  text-shadow: -1px 0 0 var(--color-white), 0 -1px 0 var(--color-white), 1px 0 0 var(--color-white), 0 1px 0 var(--color-white);
+  text-shadow: -1px 0 0 var(--color-white), 0 -1px 0 var(--color-white),
+    1px 0 0 var(--color-white), 0 1px 0 var(--color-white);
   color: #000;
 }
 .box--4 span {
   letter-spacing: 0.3vw;
   animation: text var(--time) linear infinite running;
 }
-.box--4 span:nth-child(2n+1) {
+.box--4 span:nth-child(2n + 1) {
   animation-delay: calc(var(--time) / 4);
 }
-.box--4 span:nth-child(3n+2) {
+.box--4 span:nth-child(3n + 2) {
   animation-delay: calc(var(--time) / 2);
 }
 .box--4:hover {
-  text-shadow: -1px 0 0 var(--color-grey), 0 -1px 0 var(--color-grey), 1px 0 0 var(--color-grey), 0 1px 0 var(--color-grey);
+  text-shadow: -1px 0 0 var(--color-grey), 0 -1px 0 var(--color-grey),
+    1px 0 0 var(--color-grey), 0 1px 0 var(--color-grey);
 }
 .box--4:hover span {
   animation: none;
@@ -257,7 +259,8 @@ a {
 .box--4:hover .box__title {
   z-index: 2;
   opacity: 1;
-  text-shadow: -1px 0 0 var(--color-yellow), 0 -1px 0 var(--color-yellow), 1px 0 0 var(--color-yellow), 0 1px 0 var(--color-yellow);
+  text-shadow: -1px 0 0 var(--color-yellow), 0 -1px 0 var(--color-yellow),
+    1px 0 0 var(--color-yellow), 0 1px 0 var(--color-yellow);
   transform: scale(1.6);
   color: var(--color-yellow);
 }
@@ -317,10 +320,12 @@ a {
 }
 
 @keyframes text {
-  0%, 19% {
+  0%,
+  19% {
     color: var(--color-white);
   }
-  20%, 100% {
+  20%,
+  100% {
     color: var(--color-black);
   }
 }
@@ -335,17 +340,15 @@ a {
   }
 }
 @media (max-width: 739px) {
-    .box {
-      width: 100vw;
-      /* padding-bottom: 46vw; */
-    }
-    .container{
-        font-size: 2em;
-    }
-    .box__title{
-        font-size: 0.9em;
-        /* transform: scale(1) translateY(-1vw); */
-
-    }
-    
+  .box {
+    width: 100vw;
+    /* padding-bottom: 46vw; */
   }
+  .container {
+    font-size: 2em;
+  }
+  .box__title {
+    font-size: 0.9em;
+    /* transform: scale(1) translateY(-1vw); */
+  }
+}

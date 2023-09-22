@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import VanillaTilt from "vanilla-tilt";
 import Experience from "./pages/experience";
+import Contact from "./pages/contact";
 
 export default function Home() {
   useEffect(() => {
@@ -41,6 +42,9 @@ export default function Home() {
       </div>
       <div id="experience">
         <Experience />
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
       <div id="footer">
         <Footer />

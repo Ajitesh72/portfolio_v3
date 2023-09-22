@@ -14,11 +14,17 @@ function policy() {
         height={300}
         className="mt-8 h-60 w-80 rounded-xl"
       />
-      <br/>
-    <div className="text-4xl font-bold text-gray-200">No Such Policy,clone it & Enjoy!</div>
-    <div className="text-lg text-gray-400 mt-5 md:mt-0">Learning Never stops!</div>
-      <a href="/" className="mt-4 text-blue-500 hover:underline cursor-pointer">Go back to the home page</a>
-  </main>
+      <br />
+      <div className="text-4xl font-bold text-gray-200">
+        No Such Policy,clone it & Enjoy!
+      </div>
+      <div className="text-lg text-gray-400 mt-5 md:mt-0">
+        Learning Never stops!
+      </div>
+      <a href="/" className="mt-4 text-blue-500 hover:underline cursor-pointer">
+        Go back to the home page
+      </a>
+    </main>
   );
 }
 
