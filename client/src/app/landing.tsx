@@ -53,13 +53,15 @@ const Landing = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="600"
-            className="w-full flex font-bold text-white text-2xl 2xs:text-5xl mt45 fontGamja xl:text-6xl   mt-4"
+            // className="w-full flex font-bold text-white text-2xl 2xs:text-5xl mt45 fontGamja xl:text-6xl   mt-4"
+            className="w-full flex font-bold text-white text-2xl 2xs:text-5xl mt45  xl:text-6xl   mt-4"
           >
             A DEVELOPER WHO CARES ABOUT USER EXPERIENCE
           </div>
           {/* changes */}
 
-          <div className="w-full flex flex-wrap text-sm xl:text-2xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent">
+          {/* <div className="w-full flex flex-wrap text-sm xl:text-2xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1] fontGamja bg-clip-text text-transparent"> */}
+          <div className="w-full flex flex-wrap text-sm xl:text-xl bg-gradient-to-r from-[#F8F9FD] to-[#99B7F1]  bg-clip-text text-transparent">
             ENTER A WORLD OF ENDLESS POSSIBLE USER EXPERIENCE-YOUR ULTIMATE
             DESINATION FOR SOFTWARE
           </div>
