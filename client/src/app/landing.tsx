@@ -12,7 +12,13 @@ import Sidebar from "@/components/sidebar";
 import { motion } from "framer-motion";
 
 const Landing = () => {
-  const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+  const [isFirefox, setIsFirefox] = useState(false);
+
+  useEffect(() => {
+    // Check if the user's browser is Firefox
+    setIsFirefox(navigator.userAgent.toLowerCase().indexOf('firefox') > -1);
+  }, []);
+
 
   function scrollto(idPath: string) {
     console.log(idPath);
@@ -27,9 +33,10 @@ const Landing = () => {
 
   return (
     <div className="bg-[#09123D] h-screen relative">
-      <div className="w-screen h-[40vh] sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 z-0 rounded-full blur-[300px]" style={{           display: isFirefox ? 'none' : 'block',
-
-        }}
+      <div className="w-screen h-[40vh] sm:w-[70vh] sm:h-[40vh] bg-pink-300 absolute left-0 top-0 z-0 rounded-full blur-[300px]" 
+      style={{
+        display: isFirefox ? 'none' : 'block',
+               }}
  />
       <Sidebar />
       <div className="w-0 h-[40vh]  sm:w-[70vh] sm:h-[20vh] bg-pink-300 absolute right-0 bottom-[30vh] rounded-full blur-[300px]" />
