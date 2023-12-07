@@ -10,7 +10,10 @@ import React, {
 import Image from "next/image";
 import Sidebar from "@/components/sidebar";
 import { motion } from "framer-motion";
+import type { Metadata } from 'next';
 
+
+  
 const Landing = () => {
   const [isFirefox, setIsFirefox] = useState(false);
 

@@ -4,9 +4,16 @@ import Head from 'next/head';
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Ajitesh Dubey",
-  description: "Built & designed by ajitesh",
+export const metadata = {
+  metadataBase: new URL("https://ajiteshdubey.vercel.app/"),
+  title: {
+    default: "Ajitesh",
+    template: `%s | Dubey`,
+  },
+  description: "Portfolio website of ajitesh dubey",
+  verification: {
+    google: "google-site-verification=123123123",
+  },
 };
 
 export default function RootLayout({
