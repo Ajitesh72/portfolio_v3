@@ -48,7 +48,7 @@ function Sidebar() {
       {!isOpen && (
         <div
           className={`fixed top-0 left-0 w-screen  ${
-            isScrolled ? "bg-violet-900" : ""
+            isScrolled ? "bg-slate-900" : ""
           }`}
         >
           <svg
