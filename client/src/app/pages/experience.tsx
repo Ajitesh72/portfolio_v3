@@ -21,8 +21,8 @@ function Experience() {
       end: "Current",
       highlight: "text-green-400",
       points: [
-        "Worked with developers and designers in a fast-paced environment",
-        "Used technologies like React, GCP, Tailwind CSS to build a social e-learning site.",
+        "Led a team of 10+ Tech Team to organize numerous events that comprised pan-India workshops and hackathons to promote Data Science and AI.",
+        "Used technologies like React, GCP, Tailwind CSS to build Xtract Website.",
         "Developed the Backend for the PS-Selection quiz using Firebase, integrated user leaderboards, and deployed the application on Vercel(GoDaddy Domain)",
       ],
     },
