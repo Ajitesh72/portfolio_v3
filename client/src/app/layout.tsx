@@ -10,7 +10,7 @@ export const metadata = {
     default: "Ajitesh",
     template: `%s | Dubey`,
   },
-  description: "Portfolio website of ajitesh dubey",
+  description: "Portfolio website of Ajitesh Dubey",
   verification: {
     google: "google-site-verification=123123123",
   },
@@ -23,11 +23,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <Head>
-        <meta name="google-site-verification" content="bLYa0V9I9aMRCBg6nWCVAHLx679j9iT0YJ0gVU63Lo0" />
-      </Head> */}
+      <Head>
+        <title>{metadata.title.default}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content="Ajitesh Dubey, Portfolio, Web Developer" />
+        <meta property="og:title" content={metadata.title.default} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content={metadata.metadataBase.href} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href={metadata.metadataBase.href} />
+        <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Person",
+              "name": "Ajitesh Dubey",
+              "url": "https://ajiteshdubey.vercel.app/",
+              "sameAs": [
+                "URLs to your social media profiles"
+              ]
+            }
+          `}
+        </script>
+        {/* Add other meta tags */}
+      </Head>
       <body className={inter.className}>{children}</body>
-      
     </html>
   );
 }
