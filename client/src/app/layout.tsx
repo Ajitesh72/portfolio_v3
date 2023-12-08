@@ -29,9 +29,9 @@ export default function RootLayout({
         <meta name="keywords" content="Ajitesh Dubey, Portfolio, Web Developer" />
         <meta property="og:title" content={metadata.title.default} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="URL_TO_IMAGE" />
+        {/* <meta property="og:image" content="URL_TO_IMAGE" /> */}
         <meta property="og:url" content={metadata.metadataBase.href} />
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
         <link rel="canonical" href={metadata.metadataBase.href} />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
@@ -42,7 +42,8 @@ export default function RootLayout({
               "name": "Ajitesh Dubey",
               "url": "https://ajiteshdubey.vercel.app/",
               "sameAs": [
-                "URLs to your social media profiles"
+                "https://github.com/Ajitesh72",
+                "https://www.linkedin.com/in/ajitesh-dubey-4b5852220/?profileId=ACoAADenhUkBp6cPjyYiFHv-Zcp7LQ7vSULc270"
               ]
             }
           `}
