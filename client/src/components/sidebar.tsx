@@ -126,7 +126,8 @@ function Sidebar() {
                     href="#"
                     onClick={() =>
                       window.open(
-                        "https://www.linkedin.com/in/ajitesh-dubey-4b5852220/",
+                        // "https://www.linkedin.com/in/ajitesh-dubey-4b5852220/",
+                        "https://docs.google.com/document/d/10MtBnNxujCmQemLP6C1hGVdGqlYrGl6erleukXe6L18/edit?usp=sharing",
                         "_blank"
                       )
                     }
