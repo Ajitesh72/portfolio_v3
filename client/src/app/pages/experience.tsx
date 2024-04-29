@@ -67,6 +67,19 @@ function Experience() {
         "Currently working on the integration of neural network model on frontend",
       ],
     },
+    IIT: {
+      name: "IIT Bombay",
+      logo: "/images/iit_b.jpeg",
+      background: "moving-gradient-1",
+      position: "Research Intern",
+      start: "April 2024",
+      end: "Current",
+      highlight: "text-blue-400",
+      points: [
+        // "hired for a freelance gig on upwork to work on the open source codebase of IVY-UNIFY",
+        "Currently working as a Research Intern at IIT Bombay, focusing on innovative GAN-Based Missing Data Imputation techniques",
+      ],
+    },
     Infiheal: {
       name: "Infiheal",
       logo: "/images/infiheal_logo.png",
@@ -110,7 +123,7 @@ function Experience() {
         </div>
       </div>
       <div className="text-white w-full h-full flex flex-col items-center mt-10 mb-10">
-        <div className="w-[42vh] xs:w-[50vh] sm:w-[100vh] h-[50vh] bg-white  relative">
+        <div className="w-[36vh] xs:w-[46vh] sm:w-[100vh] h-[50vh] bg-white  relative">
           <div className="h-full w-full flex justify-center items-center cursor-pointer">
             <Image
               data-aos="fade-down"
@@ -149,8 +162,8 @@ function Experience() {
           </div>
         </div>
 
-        <div className="sm:flex w-[42vh] xs:w-[50vh] sm:w-[100vh] h-[100vh] sm:h-[50vh] ">
-          <div className="moving-gradient-1 w-[42vh] xs:w-[50vh] h-[50vh] sm:h-full  flex justify-center items-center relative cursor-pointer">
+        <div className="sm:flex w-[36vh] xs:w-[46vh] sm:w-[100vh] h-[100vh] sm:h-[50vh] ">
+          <div className="moving-gradient-1 w-[36vh] xs:w-[46vh] h-[50vh] sm:h-full  flex justify-center items-center relative cursor-pointer">
             <Image
               data-aos="fade-down"
               src="/photos/arb.jpeg"
@@ -186,7 +199,7 @@ function Experience() {
               {/* main content ends */}
             </div>
           </div>
-          <div className="moving-gradient-1 w-[42vh] xs:w-[50vh] h-[50vh] sm:h-full  flex justify-center items-center relative cursor-pointer">
+          {/* <div className="moving-gradient-1 w-[42vh] xs:w-[50vh] h-[50vh] sm:h-full  flex justify-center items-center relative cursor-pointer">
             <Image
               data-aos="fade-down"
               src="/photos/ivy.png"
@@ -198,9 +211,9 @@ function Experience() {
             <div
               data-aos="fade-up"
               className="absolute h-full w-full p-5 sm:p-10 md:p-5 hover:bg-gray-800/80 hover:backdrop-blur-lg text-transparent hover:text-black top-0 left-0 transition-transform transform translateY-0 hover:translateY-100 "
-            >
+            > */}
               {/* main content starts */}
-              <div className="h-full w-full opacity-0 hover:opacity-100 overflow-y-scroll">
+              {/* <div className="h-full w-full opacity-0 hover:opacity-100 overflow-y-scroll">
                 <h1 className="font-bold text-gray-200  text-xl lg:text-2xl">
                   {experiences["IVY"].position}
                 </h1>
@@ -218,6 +231,42 @@ function Experience() {
                     </li>
                   ))}
                 </ul>
+              </div> */}
+
+              {/* main content ends */}
+            {/* </div> */}
+          <div className="moving-gradient-1 w-[36vh] xs:w-[46vh] h-[50vh] sm:h-full  flex justify-center items-center relative cursor-pointer">
+            <Image
+              data-aos="fade-down"
+              src="/photos/iit_b.png"
+              width={200}
+              height={400}
+              className="fit-content bg-white"
+              alt="s4ds"
+            />
+            <div
+              data-aos="fade-up"
+              className="absolute h-full w-full p-5 sm:p-10 md:p-5 hover:bg-gray-800/80 hover:backdrop-blur-lg text-transparent hover:text-black top-0 left-0 transition-transform transform translateY-0 hover:translateY-100 "
+            >
+              {/* main content starts */}
+              <div className="h-full w-full opacity-0 hover:opacity-100 overflow-y-scroll">
+                <h1 className="font-bold text-gray-200  text-xl lg:text-2xl">
+                  {experiences["IIT"].position}
+                </h1>
+                <h1 className="font-bold {experience.highlight} text-lg text-[#4ADD80] lg:text-lg mb-1">
+                  @{experiences["IIT"].name}
+                </h1>
+                <p className="text-gray-200 mb-5 font-mono text-md">
+                  <time>{experiences["IIT"].start}</time> -{" "}
+                  <time>{experiences["IIT"].end}</time>
+                </p>
+                <ul className="text-base font-semibold   list-square ml-4">
+                  {experiences["IIT"].points.map((point, index) => (
+                    <li className="square-list-item text-white" key={index}>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* main content ends */}
@@ -225,7 +274,7 @@ function Experience() {
           </div>
         </div>
 
-        <div className="w-[42vh] xs:w-[50vh] sm:w-[100vh] h-[50vh] bg-[#d8d8d7] border-t border-gray-200  relative cursor-pointer">
+        <div className="w-[36vh] xs:w-[46vh] sm:w-[100vh] h-[50vh] bg-[#d8d8d7] border-t border-gray-200  relative cursor-pointer">
           <div className="h-full w-full flex justify-center items-center">
             <Image
               data-aos="fade-down"
